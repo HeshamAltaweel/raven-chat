@@ -22,7 +22,7 @@ const COLORS = ['#00d4aa','#7c3aed','#f59e0b','#ef4444','#3b82f6','#ec4899','#10
 
 // ── Directories ───────────────────────────────────────────────────────────────
 const dataDir   = process.env.DATA_DIR || path.join(__dirname, 'data');
-const publicDir = path.join(__dirname, 'public');
+const publicDir = path.join(__dirname, 'public');  // هذا صحيح
 [dataDir, publicDir].forEach(d => !fs.existsSync(d) && fs.mkdirSync(d, { recursive: true }));
 
 // ── Database ──────────────────────────────────────────────────────────────────
